@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Parwatkar's Stock Price Prediction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="prediction.css">
+</head>
+<body>
+    <div id="hero">
+        <div id="hero_content">
+            <h1>Ankit Parwatkar's Stock Price Prediction</h1>
+            <h2>Trust & Reliable</h2>
+            <a href="#pred">Price Prediction</a>
+        </div>
+    </div>
+    <!-- hero section end -->
+    <!-- header section start -->
+    <div id="header">
+        <nav id="navbar">
+            <h1>Ankit Parwatkar's Stock Price Prediction</h1>
+            <ul>
+                <li><a href="stock_price_prediction.html">Home</a></li>
+                <li><a href="#pred">Predictions</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#footer">More</a></li>
+            </ul>
+            <div id="phone">
+                <a href="tel:+911234567890">+911234567890</a>
+            </div>
+        </nav>
+        <div id="mobile_menu">
+            <ul>
+                <li><a href="stock_price_prediction.html">Home</a></li>
+                <li><a href="#pred">Predictions</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#footer">More</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- header section end -->
+
+    <!-- main section start -->
+
+    <div id="pred">
+        <div class="main">
+            <h1 align="center">Predictions</h1>
+            <label for="">Company</label>
+            <select name="" id="">
+                <option value="">Adani Ports Ltd.</option>
+            </select><br><br>
+            <label for="PrevClose">Previous Close</label>
+            <input type="number" id="PrevClose" required><br><br>
+            <label for="Open">Open</label>
+            <input type="number" id="Open" required><br><br>
+            <label for="High">High</label>
+            <input type="number" id="High" required><br><br>
+            <label for="Low">Low</label>
+            <input type="number" id="Low" required><br><br>
+            <label for="Last">Last</label>
+            <input type="number" id="Last" required><br><br>
+            <button type="submit">Predict Closing Price</button><br><br>
+        </div>
+    </div>    
+
+
+
+    <!-- about section start -->
+    <div id="about">
+        <h1 id="section" align="center">About Us</h1>
+        <div id="about_row">
+            <div class="about_col">
+                <p>Years of experience, Quality Analysis, Trust, Your all stock"s single platform all service provider. Our stock predictor leverages advanced algorithms and market analysis to forecast stock trends with accuracy. By analyzing historical data, market patterns, and economic indicators, we provide insightful predictions to help investors make informed decisions. Whether you're a seasoned trader or a beginner, our tool aims to enhance your investment strategy.</p>
+            </div>
+            <div class="about_col">
+                <div id="about_img">
+                    <img src="about.jpg" alt="">
+                    <h2>Mr. Predictor</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><hr><hr>
+    <!-- about section end -->
+
+    <!-- contact section start -->
+    <div id="contact">
+        <h1 id="section" align="center">Contact</h1><br><br>
+        <div id="contact_row">
+            <div class="contact_col">
+                <div>
+                    <p>
+                        <i class="fa fa-map-marker"></i>
+                        B/23 Gandhi Nagar, Bhopal, MP (462022)
+                    </p>
+                    <p>
+                        <a href="mailto:ankitparwatkar@gmail.com">
+                            <i class="fa fa-envelope"></i>
+                            ankitparwatkar35@gmail.com
+                        </a>
+                    </p>
+                    <p>
+                        <a href="tel:+123456789012">
+                            <i class="fa fa-phone-square"></i>
+                            +123456789012
+                        </a>
+                    </p>
+                    <h3>Follow Us</h3>
+                    <p id="social">
+                        <a href=""><i class="fa fa-facebook-official fa-2x"></i></a>
+                        <a href=""><i class="fa fa-instagram fa-2x"></i></a>
+                        <a href=""><i class="fa fa-twitter-square fa-2x"></i></a>
+                        <a href=""><i class="fa fa-youtube-square fa-2x"></i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="contact_col">
+                <form action="">
+                    <h2>Get in Touch</h2>
+                    <input type="text" placeholder="Enter your Name">
+                    <input type="email" placeholder="Enter your E-mail">
+                    <input type="number" placeholder="Enter your Contact">
+                    <button>Book Appointment</button>
+                </form>
+            </div>
+        </div>
+    </div> 
+
+    <!-- contact section end -->
+
+    <!-- footer section start -->
+    <div id="footer">
+        <div>
+            <h5>Copyright &copy;2024 | <a href="">Ankit Parwatkar's Stock Price Prediction</a></h5>
+        </div>
+        <div id="top" align="center">
+            <a href="#hero"><i class="fa fa-chevron-circle-up"></i></a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('predictForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            // Get form data for 5 inputs
+            const PrevClose = parseFloat(document.getElementById('PrevClose').value);
+            const Open = parseFloat(document.getElementById('Open').value);
+            const High = parseFloat(document.getElementById('High').value);
+            const Low = parseFloat(document.getElementById('Low').value);
+            const Last = parseFloat(document.getElementById('Last').value);
+    
+            // Prepare data to send
+            const inputData = {
+                features: [PrevClose, Open, High, Last, Last]
+            };
+    
+            // Send a POST request to the Flask server
+            fetch('http://127.0.0.1:5000/predict', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(inputData),
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('prediction').textContent = 'Predicted Price: ' + data.prediction;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+    
+
+</body>
+</html>
